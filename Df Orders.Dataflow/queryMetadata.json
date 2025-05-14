@@ -1,0 +1,38 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "Df Orders",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "orders": {
+      "queryId": "5ed3e03c-d04e-451c-9840-2b985e8ba8f9",
+      "queryName": "orders",
+      "loadEnabled": false
+    },
+    "DefaultDestination": {
+      "queryId": "48416ad3-3519-45eb-88d3-98199b547755",
+      "queryName": "DefaultDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "orders_DataDestination": {
+      "queryId": "edc128cf-1ee0-4dca-818b-100ab5e71a2d",
+      "queryName": "orders_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"28108c40-7992-498a-bfba-85245c35cd41\",\"DatasourceId\":\"5715e724-ea3c-4a1c-aafa-541b1103544d\"}"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv",
+      "kind": "Web",
+      "connectionId": "{\"ClusterId\":\"28108c40-7992-498a-bfba-85245c35cd41\",\"DatasourceId\":\"bcaedb0d-2032-4c0c-9019-473a5d590e42\"}"
+    }
+  ]
+}
